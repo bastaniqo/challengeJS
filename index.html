@@ -9,25 +9,28 @@
 <body>
     
 <div>
-    <form action="" method="get" enctype="text/plain">
+    <form action="" method="post" enctype="text/plain">
 
         <label for="Marca">Marca de tu tarjeta</label> <br>
-        <select name="Marca" id="Marca">
+        <select name="Marca" id="marca">
             <option value="VISA">VISA</option>
             <option value="NARA">NARA</option>
             <option value="AMEX">AMEX</option>
         </select> <br><br>
 
         <label for="Número de tarjeta">Número de tarjeta</label> <br>
-        <input type="text" id="Número de tarjeta" placeholder="Número de su tarjeta" required> <br><br>
+        <input type="number" id="cardNumb" placeholder="4456 1000 2000 0000" required> <br><br>
 
-        <label for="Cardholder">Cardholder</label> <br>
-        <input type="text" id="Cardholder" placeholder="Nombre y apellido" required> <br><br>
+        <label for="Cardholder">Nombre en la Tarjeta</label> <br>
+        <input type="text" id="cardholder" placeholder="Francisco Alvares" required> <br><br>
 
         <label for="Fecha de vencimiento">Fecha de vencimiento</label> <br>
-        <input type="text" id="Fecha de vencimiento" placeholder="Vencimiento de la tarjeta" required> <br><br>
+        <input type="date" id="date" placeholder="Vencimiento de la tarjeta" required> <br><br>
 
-        <input type="submit" value="Enviar"> <br><br>
+        <label for="Monto">Monto</label> <br>
+        <input type="number" id="monto" placeholder="$$" required> <br><br>
+
+        <input  id="send" type="submit" value="Enviar"> <br><br>
 
         
         
@@ -38,7 +41,7 @@
 
 
 
-<script src="/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
